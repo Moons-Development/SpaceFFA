@@ -1,0 +1,6 @@
+name: SpaceFFA
+version: '${project.version}'
+main: anhuar.moons.ffa.Main
+api-version: 1.19
+depend: [ PlaceholderAPI ]
+authors: [ AnhuarRuiz ]
