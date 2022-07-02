@@ -1,4 +1,4 @@
-package anhuarruiz.dev.ffa.services.kits;
+package anhuar.moons.ffa.services.kits;
 
 public class DojoKit1 {
 }

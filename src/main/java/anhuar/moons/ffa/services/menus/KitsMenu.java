@@ -1,6 +1,6 @@
 package anhuar.moons.ffa.services.menus;
 
-import anhuarruiz.dev.ffa.utils.CC;
+import anhuar.moons.ffa.utils.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -21,42 +21,42 @@ public class KitsMenu implements Listener {
     public void createKitsMenu(Player player) {
 
         /* Nombre del Inventario */
-        Inventory inv = Bukkit.createInventory((InventoryHolder)null, 27, CC.color("&6❖ &eKitsMenu"));
+        Inventory inv = Bukkit.createInventory((InventoryHolder)null, 27, Util.color("&6❖ &eKitsMenu"));
 
         /* Items dentro del Inventario */
 
         ItemStack item = new ItemStack(264,1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(CC.color("&6DojoKIT-1"));
+        meta.setDisplayName(Util.color("&6DojoKIT-1"));
         List<String> lore = new ArrayList<String>();
-        lore.add(CC.color("&7&oClick para Seleccionar"));
+        lore.add(Util.color("&7&oClick para Seleccionar"));
         meta.setLore((List)lore);
         item.setItemMeta(meta);
         inv.setItem(10, item);
 
         item = new ItemStack( 283,1);
         meta = item.getItemMeta();
-        meta.setDisplayName(CC.color("&6DojoKIT-2"));
+        meta.setDisplayName(Util.color("&6DojoKIT-2"));
         lore = new ArrayList<String>();
-        lore.add(CC.color("&7&oClick para Seleccionar"));
+        lore.add(Util.color("&7&oClick para Seleccionar"));
         meta.setLore((List)lore);
         item.setItemMeta(meta);
         inv.setItem(12, item);
 
         item = new ItemStack(267,1);
         meta = item.getItemMeta();
-        meta.setDisplayName(CC.color("&6DojoKIT-3")); 
+        meta.setDisplayName(Util.color("&6DojoKIT-3"));
         lore = new ArrayList<String>();
-        lore.add(CC.color("&7&oClick para Seleccinar"));
+        lore.add(Util.color("&7&oClick para Seleccinar"));
         meta.setLore((List)lore);
         item.setItemMeta(meta);
         inv.setItem(14, item);
 
         item = new ItemStack(268,1);
         meta = item.getItemMeta();
-        meta.setDisplayName(CC.color("&6DojoKIT-4"));
+        meta.setDisplayName(Util.color("&6DojoKIT-4"));
         lore = new ArrayList<String>();
-        lore.add(CC.color("&7&oClick para Seleccinar"));
+        lore.add(Util.color("&7&oClick para Seleccinar"));
         meta.setLore((List)lore);
         item.setItemMeta(meta);
         inv.setItem(16, item);
@@ -67,7 +67,7 @@ public class KitsMenu implements Listener {
     @EventHandler
     public void clickKitsMenu( InventoryClickEvent event) {
 
-         String nameKitsMenu = CC.color("&6❖ &eKitsMenu");
+         String nameKitsMenu = Util.color("&6❖ &eKitsMenu");
          String getNameKitsMenu = ChatColor.stripColor(nameKitsMenu);
 
          /* Accion de no poder mover Items */

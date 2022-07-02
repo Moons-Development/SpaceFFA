@@ -1,7 +1,7 @@
-package anhuarruiz.dev.ffa;
+package anhuar.moons.ffa;
 
-import anhuarruiz.dev.ffa.services.listener.user.UserListener;
-import anhuarruiz.dev.ffa.utils.CC;
+import anhuar.moons.ffa.services.listener.user.UserListener;
+import anhuar.moons.ffa.utils.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -12,7 +12,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        CC.log("&7(&6DojoFFA&7) &aPlugin Encendido");
+        Util.log("&7(&6DojoFFA&7) &aPlugin Encendido");
 
         Main.instance = this;
 
@@ -22,20 +22,20 @@ public final class Main extends JavaPlugin {
     }
     @Override
     public void onDisable() {
-        CC.log("&7(&6DojoFFA&7) &cPlugin Apagado");
+        Util.log("&7(&6DojoFFA&7) &cPlugin Apagado");
     }
     public void loadListener() {
         PluginManager pluginManager = Bukkit.getPluginManager();
 
         pluginManager.registerEvents(new UserListener(), this);
 
-        CC.log("&7(&6DojoFFA&7) &aListener Loaded...");
+        Util.log("&7(&6DojoFFA&7) &aListener Loaded...");
     }
     public void loadCommand() {
 
         /*getCommand("hub").setExecutor(new HubCommand(this));*/
 
-        CC.log("&7(&6ApolloHub&7) &aCommands Loaded...");
+        Util.log("&7(&6ApolloHub&7) &aCommands Loaded...");
     }
 
     public static Main getInstance() {

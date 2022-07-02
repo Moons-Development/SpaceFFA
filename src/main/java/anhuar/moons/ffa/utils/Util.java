@@ -1,9 +1,9 @@
-package anhuarruiz.dev.ffa.utils;
+package anhuar.moons.ffa.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
-public class CC {
+public class Util {
 
     public static void log(String message) {
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', message));

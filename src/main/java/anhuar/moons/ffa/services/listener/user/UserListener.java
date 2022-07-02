@@ -1,4 +1,4 @@
-package anhuarruiz.dev.ffa.services.listener.user;
+package anhuar.moons.ffa.services.listener.user;
 
 import org.bukkit.event.Listener;
 
